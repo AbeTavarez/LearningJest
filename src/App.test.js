@@ -10,6 +10,6 @@ import App from './App';
 test('checks for title', () => {
   const div = document.createElement('div');
   render(<App/>, div);
-  expect(div.innerHTML).toMatch('Hi there!')
+  expect(div.innerHTML).toContain('Hi there!')
   ReactDOM.unmountComponentAtNode(div);
 })
